@@ -1,0 +1,19 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.container {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}

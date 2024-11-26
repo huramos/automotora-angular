@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="#">
+    <img src="logo.png" alt="Logo" class="navbar-logo">
+    HRH Automóviles
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="perfil">Perfil</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="automoviles">Automoviles</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary" href="#">Salir</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{usuario.imagen}}" alt="Imagen de perfil" class="img-fluid mb-3">
+    </div>
+    <div class="col-md-8">
+      <h2>Perfil de Usuario</h2>
+      <p><strong>Nombre:</strong> {{usuario.nombre}}</p>
+      <p><strong>Edad:</strong> {{usuario.edad}}</p>
+      <p><strong>Email:</strong> {{usuario.email}}</p>
+      <p><strong>Contrasena:</strong> {{usuario.contrasena}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #008000; /* Verde */
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.nav-link {
+  color: #0000ff !important; /* Azul */
+}
