@@ -74,6 +74,12 @@ export class LoginFormComponent implements OnInit {
     });
   }
 
+  recoverPassword() {
+    this.router.navigateByUrl('/register').then(() => {
+      window.location.reload();
+    });
+  }
+
   showToast(message: string, type: 'success' | 'danger') {
     const toastContainer = this.el.nativeElement.querySelector('#toast-container');
     const toastElement = document.createElement('div');
