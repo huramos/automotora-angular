@@ -263,7 +263,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/register/register.component.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/register/register.component.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -330,8 +330,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="42"
-                                    class="link-to-prism">src/app/components/register/register.component.ts:42</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="35"
+                                    class="link-to-prism">src/app/components/register/register.component.ts:35</a></div>
                         </td>
                     </tr>
 
@@ -367,8 +367,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="66"
-                                    class="link-to-prism">src/app/components/register/register.component.ts:66</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="54"
+                                    class="link-to-prism">src/app/components/register/register.component.ts:54</a></div>
                         </td>
                     </tr>
 
@@ -404,8 +404,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="45"
-                                    class="link-to-prism">src/app/components/register/register.component.ts:45</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="37"
+                                    class="link-to-prism">src/app/components/register/register.component.ts:37</a></div>
                         </td>
                     </tr>
 
@@ -519,8 +519,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="89"
-                                    class="link-to-prism">src/app/components/register/register.component.ts:89</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="74"
+                                    class="link-to-prism">src/app/components/register/register.component.ts:74</a></div>
                         </td>
                     </tr>
 
@@ -566,7 +566,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/app/components/register/register.component.ts:87</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/components/register/register.component.ts:72</a></div>
                         </td>
                     </tr>
 
@@ -592,7 +592,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/register/register.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/components/register/register.component.ts:15</a></div>
                         </td>
                     </tr>
 
@@ -617,7 +617,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/components/register/register.component.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/register/register.component.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -648,7 +648,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/components/register/register.component.ts:19</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/register/register.component.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -661,88 +661,74 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;; // Importa decorador y ciclo de vida &#x60;OnInit&#x60; de Angular.
-import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;; // Para trabajar con formularios reactivos.
-import { CommonModule } from &#x27;@angular/common&#x27;; // Módulo común para directivas básicas como *ngIf y *ngFor.
-import { RouterModule } from &#x27;@angular/router&#x27;; // Para manejar rutas.
-import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;; // Módulo necesario para formularios reactivos.
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
+import { RouterModule } from &#x27;@angular/router&#x27;;
+import { ReactiveFormsModule } from &#x27;@angular/forms&#x27;;
 
-// Decorador que define el componente.
 @Component({
-  selector: &#x27;app-register&#x27;, // Selector del componente que se usa en plantillas HTML.
-  standalone: true, // Indica que este componente es independiente y no requiere estar en un módulo.
-  imports: [CommonModule, RouterModule, ReactiveFormsModule], // Módulos y componentes que este componente utiliza.
-  templateUrl: &#x27;./register.component.html&#x27;, // Archivo de plantilla asociado.
-  styleUrls: [&#x27;./register.component.css&#x27;] // Archivo de estilos asociado.
+  selector: &#x27;app-register&#x27;,
+  standalone: true,
+  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  templateUrl: &#x27;./register.component.html&#x27;,
+  styleUrls: [&#x27;./register.component.css&#x27;]
 })
 export class RegisterComponent implements OnInit {
-  // Propiedades del componente.
-  registerForm: FormGroup; // Formulario reactivo para el registro.
-  usuarios: any[] &#x3D; []; // Lista de usuarios almacenados en localStorage.
-  submitted &#x3D; false; // Indica si el formulario ha sido enviado.
+  registerForm: FormGroup;
+  usuarios: any[] &#x3D; [];
+  submitted &#x3D; false;
 
-  // Constructor para inicializar el FormBuilder y cargar usuarios de localStorage.
   constructor(private fb: FormBuilder) {
-    // Inicializa el formulario con validaciones.
     this.registerForm &#x3D; this.fb.group({
-      email: [&#x27;&#x27;, [Validators.required, Validators.email]], // Campo de correo obligatorio y formato de email válido.
-      name: [&#x27;&#x27;, Validators.required], // Campo de nombre obligatorio.
-      password: [&#x27;&#x27;, [Validators.required, Validators.minLength(8)]], // Campo de contraseña con mínimo 8 caracteres.
-      repeatPassword: [&#x27;&#x27;, Validators.required], // Confirmación de contraseña obligatoria.
-      username: [&#x27;&#x27;, Validators.required], // Nombre de usuario obligatorio.
-      birthdate: [&#x27;&#x27;, Validators.required] // Fecha de nacimiento obligatoria.
+      email: [&#x27;&#x27;, [Validators.required, Validators.email]],
+      name: [&#x27;&#x27;, Validators.required],
+      password: [&#x27;&#x27;, [Validators.required, Validators.minLength(8)]],
+      repeatPassword: [&#x27;&#x27;, Validators.required],
+      username: [&#x27;&#x27;, Validators.required],
+      birthdate: [&#x27;&#x27;, Validators.required]
     });
 
-    // Carga los usuarios almacenados en localStorage si existen.
     if (typeof localStorage !&#x3D;&#x3D; &#x27;undefined&#x27;) {
       const usuariosGuardados &#x3D; localStorage.getItem(&#x27;usuarios&#x27;);
       this.usuarios &#x3D; usuariosGuardados ? JSON.parse(usuariosGuardados) : [];
     }
   }
 
-  // Método del ciclo de vida Angular, aquí no hace nada adicional.
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
-  // Método para registrar un usuario.
   registrarUsuario(email: string, name: string, password: string, username: string, birthdate: string): boolean {
-    // Comprueba si ya existe un usuario con el mismo email o nombre de usuario.
     const usuarioExistente &#x3D; this.usuarios.find(user &#x3D;&gt; user.email &#x3D;&#x3D;&#x3D; email || user.username &#x3D;&#x3D;&#x3D; username);
     if (usuarioExistente) {
-      alert(&#x27;El usuario ya existe.&#x27;); // Muestra un mensaje de error.
+      alert(&#x27;El usuario ya existe.&#x27;);
       return false;
     }
 
-    // Crea un nuevo usuario y lo añade a la lista.
     const nuevoUsuario &#x3D; { email, name, password, username, birthdate };
     this.usuarios.push(nuevoUsuario);
 
-    // Guarda los usuarios actualizados en localStorage.
     if (typeof localStorage !&#x3D;&#x3D; &#x27;undefined&#x27;) {
       localStorage.setItem(&#x27;usuarios&#x27;, JSON.stringify(this.usuarios));
     }
-    alert(&#x27;Usuario registrado exitosamente.&#x27;); // Muestra mensaje de éxito.
+    alert(&#x27;Usuario registrado exitosamente.&#x27;);
     return true;
   }
 
-  // Método que se llama al enviar el formulario.
   onSubmit(): void {
-    this.submitted &#x3D; true; // Marca el formulario como enviado.
+    this.submitted &#x3D; true;
 
-    if (this.registerForm.valid) { // Verifica si el formulario es válido.
-      // Extrae los valores del formulario.
+    if (this.registerForm.valid) {
       const { email, name, password, repeatPassword, username, birthdate } &#x3D; this.registerForm.value;
 
-      // Verifica que las contraseñas coincidan.
       if (password !&#x3D;&#x3D; repeatPassword) {
-        alert(&#x27;Las contraseñas no coinciden.&#x27;); // Muestra mensaje de error si no coinciden.
+        alert(&#x27;Las contraseñas no coinciden.&#x27;);
         return;
       }
 
-      // Registra al usuario si las contraseñas coinciden.
       const registroExitoso &#x3D; this.registrarUsuario(email, name, password, username, birthdate);
       if (registroExitoso) {
-        this.registerForm.reset(); // Reinicia el formulario.
-        this.submitted &#x3D; false; // Marca el formulario como no enviado.
+        this.registerForm.reset();
+        this.submitted &#x3D; false;
       }
     }
   }
@@ -758,160 +744,100 @@ export class RegisterComponent implements OnInit {
 
     <div class="tab-pane fade " id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;center-content mt-5&quot;&gt;
-    &lt;!-- Contenedor principal del formulario de registro --&gt;
-    &lt;div class&#x3D;&quot;center-content&quot;&gt;
-      &lt;div class&#x3D;&quot;row w-100&quot;&gt;
-        &lt;/div&gt;
-        &lt;!-- Columna derecha: formulario de registro --&gt;
-        &lt;div class&#x3D;&quot;col-md-6 px-5 d-flex flex-column align-items-center&quot;&gt;
-          &lt;!-- Logotipo de Automotora --&gt;
-          &lt;div class&#x3D;&quot;mb-5 text-center&quot;&gt;
-            &lt;img src&#x3D;&quot;logo.png&quot; alt&#x3D;&quot;Automotora Logo&quot; class&#x3D;&quot;logo&quot;&gt;
-          &lt;/div&gt;
-          &lt;!-- Formulario de registro --&gt;
-          &lt;form 
-            [formGroup]&#x3D;&quot;registerForm&quot; 
-            (ngSubmit)&#x3D;&quot;onSubmit()&quot; 
-            class&#x3D;&quot;col-4 text-center w-100 needs-validation&quot; 
-            novalidate&gt;
-            &lt;!-- Campo de email --&gt;
-            &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
-              &lt;input 
-                type&#x3D;&quot;email&quot; 
-                formControlName&#x3D;&quot;email&quot; 
-                class&#x3D;&quot;form-control&quot; 
-                id&#x3D;&quot;email&quot; 
-                placeholder&#x3D;&quot;Introduce tu email&quot; 
-                required 
-                [ngClass]&#x3D;&quot;{ 
+  &lt;div class&#x3D;&quot;center-content&quot;&gt;
+    &lt;div class&#x3D;&quot;row w-100&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;col-md-6 px-5 d-flex flex-column align-items-center&quot;&gt;
+      &lt;div class&#x3D;&quot;mb-5 text-center&quot;&gt;
+        &lt;img src&#x3D;&quot;logo.png&quot; alt&#x3D;&quot;Automotora Logo&quot; class&#x3D;&quot;logo&quot;&gt;
+      &lt;/div&gt;
+      &lt;form [formGroup]&#x3D;&quot;registerForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; class&#x3D;&quot;col-4 text-center w-100 needs-validation&quot;
+        novalidate&gt;
+        &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
+          &lt;input type&#x3D;&quot;email&quot; formControlName&#x3D;&quot;email&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;email&quot; placeholder&#x3D;&quot;Introduce tu email&quot;
+            required [ngClass]&#x3D;&quot;{ 
                   &#x27;is-invalid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;email&#x27;].errors, 
                   &#x27;is-valid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;email&#x27;].valid 
                 }&quot;&gt;
-              &lt;label for&#x3D;&quot;email&quot;&gt;Email&lt;/label&gt;
-              &lt;!-- Mensaje de error dinámico --&gt;
-              &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;email&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
-                Por favor, introduce un email válido.
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;!-- Campo de nombre completo --&gt;
-            &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
-              &lt;input 
-                type&#x3D;&quot;text&quot; 
-                formControlName&#x3D;&quot;name&quot; 
-                class&#x3D;&quot;form-control&quot; 
-                id&#x3D;&quot;name&quot; 
-                placeholder&#x3D;&quot;Introduce tu nombre completo&quot; 
-                required 
-                [ngClass]&#x3D;&quot;{ 
+          &lt;label for&#x3D;&quot;email&quot;&gt;Email&lt;/label&gt;
+          &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;email&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+            Por favor, introduce un email válido.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
+          &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;name&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;name&quot;
+            placeholder&#x3D;&quot;Introduce tu nombre completo&quot; required [ngClass]&#x3D;&quot;{ 
                   &#x27;is-invalid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;name&#x27;].errors, 
                   &#x27;is-valid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;name&#x27;].valid 
                 }&quot;&gt;
-              &lt;label for&#x3D;&quot;name&quot;&gt;Nombre completo&lt;/label&gt;
-              &lt;!-- Mensaje de error dinámico --&gt;
-              &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;name&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
-                Por favor, introduce tu nombre completo.
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;!-- Campo de contraseña --&gt;
-            &lt;div class&#x3D;&quot;form-group mb-3 position-relative&quot;&gt;
-              &lt;div class&#x3D;&quot;input-group&quot;&gt;
-                &lt;div class&#x3D;&quot;form-floating&quot;&gt;
-                  &lt;input 
-                    type&#x3D;&quot;password&quot; 
-                    formControlName&#x3D;&quot;password&quot; 
-                    class&#x3D;&quot;form-control&quot; 
-                    id&#x3D;&quot;pwd&quot; 
-                    placeholder&#x3D;&quot;Introduce tu contraseña&quot; 
-                    required 
-                    [ngClass]&#x3D;&quot;{ 
+          &lt;label for&#x3D;&quot;name&quot;&gt;Nombre completo&lt;/label&gt;
+          &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;name&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+            Por favor, introduce tu nombre completo.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group mb-3 position-relative&quot;&gt;
+          &lt;div class&#x3D;&quot;input-group&quot;&gt;
+            &lt;div class&#x3D;&quot;form-floating&quot;&gt;
+              &lt;input type&#x3D;&quot;password&quot; formControlName&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;pwd&quot;
+                placeholder&#x3D;&quot;Introduce tu contraseña&quot; required [ngClass]&#x3D;&quot;{ 
                       &#x27;is-invalid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;password&#x27;].errors, 
                       &#x27;is-valid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;password&#x27;].valid 
                     }&quot;&gt;
-                  &lt;!-- Mensaje de error dinámico --&gt;
-                  &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;password&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
-                    La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un carácter especial.
-                  &lt;/div&gt;
-                  &lt;label for&#x3D;&quot;pwd&quot;&gt;Contraseña&lt;/label&gt;
-                &lt;/div&gt;
+              &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;password&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un
+                carácter especial.
               &lt;/div&gt;
+              &lt;label for&#x3D;&quot;pwd&quot;&gt;Contraseña&lt;/label&gt;
             &lt;/div&gt;
-            &lt;!-- Campo de repetir contraseña --&gt;
-            &lt;div class&#x3D;&quot;form-group mb-3 position-relative&quot;&gt;
-              &lt;div class&#x3D;&quot;input-group&quot;&gt;
-                &lt;div class&#x3D;&quot;form-floating&quot;&gt;
-                  &lt;input 
-                    type&#x3D;&quot;password&quot; 
-                    formControlName&#x3D;&quot;repeatPassword&quot; 
-                    class&#x3D;&quot;form-control&quot; 
-                    id&#x3D;&quot;repeat-pwd&quot; 
-                    placeholder&#x3D;&quot;Repite tu contraseña&quot; 
-                    required 
-                    [ngClass]&#x3D;&quot;{ 
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group mb-3 position-relative&quot;&gt;
+          &lt;div class&#x3D;&quot;input-group&quot;&gt;
+            &lt;div class&#x3D;&quot;form-floating&quot;&gt;
+              &lt;input type&#x3D;&quot;password&quot; formControlName&#x3D;&quot;repeatPassword&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;repeat-pwd&quot;
+                placeholder&#x3D;&quot;Repite tu contraseña&quot; required [ngClass]&#x3D;&quot;{ 
                       &#x27;is-invalid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;repeatPassword&#x27;].errors, 
                       &#x27;is-valid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;repeatPassword&#x27;].valid 
                     }&quot;&gt;
-                  &lt;!-- Mensaje de error dinámico --&gt;
-                  &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;repeatPassword&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
-                    Las contraseñas no coinciden.
-                  &lt;/div&gt;
-                  &lt;label for&#x3D;&quot;repeat-pwd&quot;&gt;Repetir contraseña&lt;/label&gt;
-                &lt;/div&gt;
+              &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;repeatPassword&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+                Las contraseñas no coinciden.
               &lt;/div&gt;
+              &lt;label for&#x3D;&quot;repeat-pwd&quot;&gt;Repetir contraseña&lt;/label&gt;
             &lt;/div&gt;
-            &lt;!-- Campo de nombre de usuario --&gt;
-            &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
-              &lt;input 
-                type&#x3D;&quot;text&quot; 
-                formControlName&#x3D;&quot;username&quot; 
-                class&#x3D;&quot;form-control&quot; 
-                id&#x3D;&quot;username&quot; 
-                placeholder&#x3D;&quot;Introduce tu nombre de usuario&quot; 
-                required 
-                [ngClass]&#x3D;&quot;{ 
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
+          &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;username&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;username&quot;
+            placeholder&#x3D;&quot;Introduce tu nombre de usuario&quot; required [ngClass]&#x3D;&quot;{ 
                   &#x27;is-invalid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;username&#x27;].errors, 
                   &#x27;is-valid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;username&#x27;].valid 
                 }&quot;&gt;
-              &lt;label for&#x3D;&quot;username&quot;&gt;Nombre de usuario&lt;/label&gt;
-              &lt;!-- Mensaje de error dinámico --&gt;
-              &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;username&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
-                Por favor, introduce un nombre de usuario.
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;!-- Campo de fecha de nacimiento --&gt;
-            &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
-              &lt;input 
-                type&#x3D;&quot;date&quot; 
-                formControlName&#x3D;&quot;birthdate&quot; 
-                class&#x3D;&quot;form-control&quot; 
-                id&#x3D;&quot;date&quot; 
-                placeholder&#x3D;&quot;Introduce tu fecha de nacimiento&quot; 
-                required 
-                [ngClass]&#x3D;&quot;{ 
+          &lt;label for&#x3D;&quot;username&quot;&gt;Nombre de usuario&lt;/label&gt;
+          &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;username&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+            Por favor, introduce un nombre de usuario.
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
+          &lt;input type&#x3D;&quot;date&quot; formControlName&#x3D;&quot;birthdate&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;date&quot;
+            placeholder&#x3D;&quot;Introduce tu fecha de nacimiento&quot; required [ngClass]&#x3D;&quot;{ 
                   &#x27;is-invalid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;birthdate&#x27;].errors, 
                   &#x27;is-valid&#x27;: submitted &amp;&amp; registerForm.controls[&#x27;birthdate&#x27;].valid 
                 }&quot;&gt;
-              &lt;label for&#x3D;&quot;date&quot;&gt;Fecha de nacimiento&lt;/label&gt;
-              &lt;!-- Mensaje de error dinámico --&gt;
-              &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;birthdate&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
-                Debes tener al menos 16 años para registrarte.
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;!-- Botón de registro --&gt;
-            &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-submit btn-primary&quot;&gt;Registrarse&lt;/button&gt;
-          &lt;/form&gt;
-          &lt;!-- Separador --&gt;
-          &lt;div class&#x3D;&quot;separator my-4&quot;&gt;
-            &lt;span class&#x3D;&quot;separator-text&quot;&gt;O&lt;/span&gt;
+          &lt;label for&#x3D;&quot;date&quot;&gt;Fecha de nacimiento&lt;/label&gt;
+          &lt;div *ngIf&#x3D;&quot;submitted &amp;&amp; registerForm.controls[&#x27;birthdate&#x27;].errors&quot; class&#x3D;&quot;invalid-feedback&quot;&gt;
+            Debes tener al menos 16 años para registrarte.
           &lt;/div&gt;
-          &lt;!-- Botón de registro con Facebook --&gt;
-          &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-submit btn-secondary&quot;&gt;Registrarse con Facebook&lt;/button&gt;
-          &lt;!-- Enlace para iniciar sesión --&gt;
-          &lt;p class&#x3D;&quot;mt-4&quot;&gt;¿Tienes una cuenta? &lt;a routerLink&#x3D;&quot;/main&quot; class&#x3D;&quot;link-dark&quot;&gt;Inicia sesión&lt;/a&gt;&lt;/p&gt;
         &lt;/div&gt;
+        &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-submit btn-primary&quot;&gt;Registrarse&lt;/button&gt;
+      &lt;/form&gt;
+      &lt;div class&#x3D;&quot;separator my-4&quot;&gt;
+        &lt;span class&#x3D;&quot;separator-text&quot;&gt;O&lt;/span&gt;
       &lt;/div&gt;
-  &lt;/section&gt;
-  &lt;!-- Footer --&gt;
-  </code></pre>
+      &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-submit btn-secondary&quot;&gt;Registrarse con Facebook&lt;/button&gt;
+      &lt;p class&#x3D;&quot;mt-4&quot;&gt;¿Tienes una cuenta? &lt;a routerLink&#x3D;&quot;/main&quot; class&#x3D;&quot;link-dark&quot;&gt;Inicia sesión&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="styleData">
@@ -919,85 +845,84 @@ export class RegisterComponent implements OnInit {
                     <code>./register.component.css</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">body {
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-family: &#x27;Open Sans&#x27;, sans-serif !important;
-  }
-  
-  .container-register {
-    flex: 1; /* Para que ocupe el espacio disponible entre el header y el footer */
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 150px;
-  }
-  
-  #togglePassword, #toggleRepeatPassword {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 1em;
-    --bs-btn-hover-color: #212529;
-  }
-  
-  .btn-submit {
-    width: 100%;
-  }
-  
-  .separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #aaa;
-  }
-  
-  .separator::before,
-  .separator::after {
-    content: &#x27;&#x27;;
-    flex: 1;
-    border-bottom: 1px solid #aaa;
-  }
-  
-  .separator:not(:empty)::before {
-    margin-right: .25em;
-  }
-  
-  .separator:not(:empty)::after {
-    margin-left: .25em;
-  }
-  
-  .separator-text {
-    font-size: 1em;
-    color: #555;
-    padding: 0 10px;
-    background-color: #fff;
-  }
-  
-  /* Estilo para las alertas */
-  .alert {
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    width: 100%;
-  }
-  
-  .alert-success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-  }
-  
-  .alert-danger {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-  }
-  </code></pre>
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: &#x27;Open Sans&#x27;, sans-serif !important;
+}
+
+.container-register {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+}
+
+#togglePassword,
+#toggleRepeatPassword {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+  --bs-btn-hover-color: #212529;
+}
+
+.btn-submit {
+  width: 100%;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #aaa;
+}
+
+.separator::before,
+.separator::after {
+  content: &#x27;&#x27;;
+  flex: 1;
+  border-bottom: 1px solid #aaa;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.separator-text {
+  font-size: 1em;
+  color: #555;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+.alert {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="tree">
@@ -1025,7 +950,7 @@ export class RegisterComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><section class="center-content mt-5">    <!-- Contenedor principal del formulario de registro -->    <div class="center-content">      <div class="row w-100">        </div>        <!-- Columna derecha: formulario de registro -->        <div class="col-md-6 px-5 d-flex flex-column align-items-center">          <!-- Logotipo de Automotora -->          <div class="mb-5 text-center">            <img src="logo.png" alt="Automotora Logo" class="logo">          </div>          <!-- Formulario de registro -->          <form             [formGroup]="registerForm"             (ngSubmit)="onSubmit()"             class="col-4 text-center w-100 needs-validation"             novalidate>            <!-- Campo de email -->            <div class="form-group form-floating mb-3">              <input                 type="email"                 formControlName="email"                 class="form-control"                 id="email"                 placeholder="Introduce tu email"                 required                 [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'email\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'email\'].valid                 }">              <label for="email">Email</label>              <!-- Mensaje de error dinámico -->              <div *ngIf="submitted && registerForm.controls[\'email\'].errors" class="invalid-feedback">                Por favor, introduce un email válido.              </div>            </div>            <!-- Campo de nombre completo -->            <div class="form-group form-floating mb-3">              <input                 type="text"                 formControlName="name"                 class="form-control"                 id="name"                 placeholder="Introduce tu nombre completo"                 required                 [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'name\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'name\'].valid                 }">              <label for="name">Nombre completo</label>              <!-- Mensaje de error dinámico -->              <div *ngIf="submitted && registerForm.controls[\'name\'].errors" class="invalid-feedback">                Por favor, introduce tu nombre completo.              </div>            </div>            <!-- Campo de contraseña -->            <div class="form-group mb-3 position-relative">              <div class="input-group">                <div class="form-floating">                  <input                     type="password"                     formControlName="password"                     class="form-control"                     id="pwd"                     placeholder="Introduce tu contraseña"                     required                     [ngClass]="{                       \'is-invalid\': submitted && registerForm.controls[\'password\'].errors,                       \'is-valid\': submitted && registerForm.controls[\'password\'].valid                     }">                  <!-- Mensaje de error dinámico -->                  <div *ngIf="submitted && registerForm.controls[\'password\'].errors" class="invalid-feedback">                    La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un carácter especial.                  </div>                  <label for="pwd">Contraseña</label>                </div>              </div>            </div>            <!-- Campo de repetir contraseña -->            <div class="form-group mb-3 position-relative">              <div class="input-group">                <div class="form-floating">                  <input                     type="password"                     formControlName="repeatPassword"                     class="form-control"                     id="repeat-pwd"                     placeholder="Repite tu contraseña"                     required                     [ngClass]="{                       \'is-invalid\': submitted && registerForm.controls[\'repeatPassword\'].errors,                       \'is-valid\': submitted && registerForm.controls[\'repeatPassword\'].valid                     }">                  <!-- Mensaje de error dinámico -->                  <div *ngIf="submitted && registerForm.controls[\'repeatPassword\'].errors" class="invalid-feedback">                    Las contraseñas no coinciden.                  </div>                  <label for="repeat-pwd">Repetir contraseña</label>                </div>              </div>            </div>            <!-- Campo de nombre de usuario -->            <div class="form-group form-floating mb-3">              <input                 type="text"                 formControlName="username"                 class="form-control"                 id="username"                 placeholder="Introduce tu nombre de usuario"                 required                 [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'username\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'username\'].valid                 }">              <label for="username">Nombre de usuario</label>              <!-- Mensaje de error dinámico -->              <div *ngIf="submitted && registerForm.controls[\'username\'].errors" class="invalid-feedback">                Por favor, introduce un nombre de usuario.              </div>            </div>            <!-- Campo de fecha de nacimiento -->            <div class="form-group form-floating mb-3">              <input                 type="date"                 formControlName="birthdate"                 class="form-control"                 id="date"                 placeholder="Introduce tu fecha de nacimiento"                 required                 [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'birthdate\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'birthdate\'].valid                 }">              <label for="date">Fecha de nacimiento</label>              <!-- Mensaje de error dinámico -->              <div *ngIf="submitted && registerForm.controls[\'birthdate\'].errors" class="invalid-feedback">                Debes tener al menos 16 años para registrarte.              </div>            </div>            <!-- Botón de registro -->            <button type="submit" class="btn btn-submit btn-primary">Registrarse</button>          </form>          <!-- Separador -->          <div class="separator my-4">            <span class="separator-text">O</span>          </div>          <!-- Botón de registro con Facebook -->          <button type="button" class="btn btn-submit btn-secondary">Registrarse con Facebook</button>          <!-- Enlace para iniciar sesión -->          <p class="mt-4">¿Tienes una cuenta? <a routerLink="/main" class="link-dark">Inicia sesión</a></p>        </div>      </div>  </section>  <!-- Footer -->  </div>'
+        var COMPONENT_TEMPLATE = '<div><section class="center-content mt-5">  <div class="center-content">    <div class="row w-100">    </div>    <div class="col-md-6 px-5 d-flex flex-column align-items-center">      <div class="mb-5 text-center">        <img src="logo.png" alt="Automotora Logo" class="logo">      </div>      <form [formGroup]="registerForm" (ngSubmit)="onSubmit()" class="col-4 text-center w-100 needs-validation"        novalidate>        <div class="form-group form-floating mb-3">          <input type="email" formControlName="email" class="form-control" id="email" placeholder="Introduce tu email"            required [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'email\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'email\'].valid                 }">          <label for="email">Email</label>          <div *ngIf="submitted && registerForm.controls[\'email\'].errors" class="invalid-feedback">            Por favor, introduce un email válido.          </div>        </div>        <div class="form-group form-floating mb-3">          <input type="text" formControlName="name" class="form-control" id="name"            placeholder="Introduce tu nombre completo" required [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'name\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'name\'].valid                 }">          <label for="name">Nombre completo</label>          <div *ngIf="submitted && registerForm.controls[\'name\'].errors" class="invalid-feedback">            Por favor, introduce tu nombre completo.          </div>        </div>        <div class="form-group mb-3 position-relative">          <div class="input-group">            <div class="form-floating">              <input type="password" formControlName="password" class="form-control" id="pwd"                placeholder="Introduce tu contraseña" required [ngClass]="{                       \'is-invalid\': submitted && registerForm.controls[\'password\'].errors,                       \'is-valid\': submitted && registerForm.controls[\'password\'].valid                     }">              <div *ngIf="submitted && registerForm.controls[\'password\'].errors" class="invalid-feedback">                La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, una minúscula, un número y un                carácter especial.              </div>              <label for="pwd">Contraseña</label>            </div>          </div>        </div>        <div class="form-group mb-3 position-relative">          <div class="input-group">            <div class="form-floating">              <input type="password" formControlName="repeatPassword" class="form-control" id="repeat-pwd"                placeholder="Repite tu contraseña" required [ngClass]="{                       \'is-invalid\': submitted && registerForm.controls[\'repeatPassword\'].errors,                       \'is-valid\': submitted && registerForm.controls[\'repeatPassword\'].valid                     }">              <div *ngIf="submitted && registerForm.controls[\'repeatPassword\'].errors" class="invalid-feedback">                Las contraseñas no coinciden.              </div>              <label for="repeat-pwd">Repetir contraseña</label>            </div>          </div>        </div>        <div class="form-group form-floating mb-3">          <input type="text" formControlName="username" class="form-control" id="username"            placeholder="Introduce tu nombre de usuario" required [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'username\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'username\'].valid                 }">          <label for="username">Nombre de usuario</label>          <div *ngIf="submitted && registerForm.controls[\'username\'].errors" class="invalid-feedback">            Por favor, introduce un nombre de usuario.          </div>        </div>        <div class="form-group form-floating mb-3">          <input type="date" formControlName="birthdate" class="form-control" id="date"            placeholder="Introduce tu fecha de nacimiento" required [ngClass]="{                   \'is-invalid\': submitted && registerForm.controls[\'birthdate\'].errors,                   \'is-valid\': submitted && registerForm.controls[\'birthdate\'].valid                 }">          <label for="date">Fecha de nacimiento</label>          <div *ngIf="submitted && registerForm.controls[\'birthdate\'].errors" class="invalid-feedback">            Debes tener al menos 16 años para registrarte.          </div>        </div>        <button type="submit" class="btn btn-submit btn-primary">Registrarse</button>      </form>      <div class="separator my-4">        <span class="separator-text">O</span>      </div>      <button type="button" class="btn btn-submit btn-secondary">Registrarse con Facebook</button>      <p class="mt-4">¿Tienes una cuenta? <a routerLink="/main" class="link-dark">Inicia sesión</a></p>    </div>  </div></section></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AutomovilesComponent', 'selector': 'app-automoviles'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'PruebasUntariasComponent', 'selector': 'app-pruebas-unitarias'},{'name': 'RegisterComponent', 'selector': 'app-register'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'RegisterComponent'};

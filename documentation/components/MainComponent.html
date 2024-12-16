@@ -198,26 +198,23 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;; // Importa el decorador &#x60;Component&#x60; de Angular para definir un componente.
-import { CommonModule } from &#x27;@angular/common&#x27;; // Proporciona directivas comunes como &#x60;ngIf&#x60; y &#x60;ngFor&#x60;.
-import { LoginFormComponent } from &#x27;../login-form/login-form.component&#x27;; // Importa el componente &#x60;LoginForm&#x60;.
-import { RouterModule } from &#x27;@angular/router&#x27;; // Importa el módulo de rutas para manejar enlaces dentro de la plantilla.
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
+import { LoginFormComponent } from &#x27;../login-form/login-form.component&#x27;;
+import { RouterModule } from &#x27;@angular/router&#x27;;
 
-// Decorador que define el componente
 @Component({
-  selector: &#x27;app-main&#x27;, // Selector que identifica este componente en las plantillas HTML.
-  standalone: true, // Indica que este componente es independiente (no necesita estar dentro de un módulo Angular).
-  imports: [ // Lista de módulos y componentes que este componente necesita para funcionar.
-    CommonModule, // Proporciona directivas comunes como &#x60;ngIf&#x60; y &#x60;ngFor&#x60;.
-    LoginFormComponent, // Importa el componente &#x60;LoginForm&#x60;.
-    RouterModule // Permite el uso de enlaces con &#x60;routerLink&#x60; en la plantilla HTML.
+  selector: &#x27;app-main&#x27;,
+  standalone: true,
+  imports: [
+    CommonModule,
+    LoginFormComponent,
+    RouterModule
   ],
-  templateUrl: &#x27;./main.component.html&#x27;, // Define la ruta al archivo de plantilla HTML asociado.
-  styleUrls: [&#x27;./main.component.css&#x27;] // Define la ruta al archivo de estilos CSS asociado.
+  templateUrl: &#x27;./main.component.html&#x27;,
+  styleUrls: [&#x27;./main.component.css&#x27;]
 })
 export class MainComponent {
-  // Este componente no tiene lógica adicional en el archivo TypeScript.
-  // Actúa como un contenedor para mostrar los subcomponentes &#x60;PhoneFrame&#x60;, &#x60;LoginForm&#x60;, y &#x60;Footer&#x60;.
 }
 
 </code></pre>
@@ -225,18 +222,12 @@ export class MainComponent {
 
     <div class="tab-pane fade " id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;section class&#x3D;&quot;container mt-5&quot;&gt;
-    &lt;!-- Contenedor principal con un margen superior --&gt;
-    &lt;div class&#x3D;&quot;row&quot;&gt;
-        &lt;!-- Componente del marco del teléfono --&gt;
-      &lt;/div&gt;
-      &lt;!-- Columna derecha: Formulario de inicio de sesión --&gt;
-      &lt;div class&#x3D;&quot;center-content&quot;&gt;
-        &lt;!-- Componente del formulario de inicio de sesión --&gt;
-        &lt;app-login-form&gt;&lt;/app-login-form&gt;
-      &lt;/div&gt;
-  &lt;/section&gt;
-  &lt;!-- Pie de página --&gt;
-  </code></pre>
+  &lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;center-content&quot;&gt;
+    &lt;app-login-form&gt;&lt;/app-login-form&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="styleData">
@@ -271,7 +262,7 @@ export class MainComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><section class="container mt-5">    <!-- Contenedor principal con un margen superior -->    <div class="row">        <!-- Componente del marco del teléfono -->      </div>      <!-- Columna derecha: Formulario de inicio de sesión -->      <div class="center-content">        <!-- Componente del formulario de inicio de sesión -->        <app-login-form></app-login-form>      </div>  </section>  <!-- Pie de página -->  </div>'
+        var COMPONENT_TEMPLATE = '<div><section class="container mt-5">  <div class="row">  </div>  <div class="center-content">    <app-login-form></app-login-form>  </div></section></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AutomovilesComponent', 'selector': 'app-automoviles'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'PruebasUntariasComponent', 'selector': 'app-pruebas-unitarias'},{'name': 'RegisterComponent', 'selector': 'app-register'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'MainComponent'};

@@ -260,7 +260,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/login-form/login-form.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/login-form/login-form.component.ts:17</a></div>
                             </td>
                         </tr>
 
@@ -351,8 +351,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="39"
-                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:39</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="33"
+                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:33</a></div>
                         </td>
                     </tr>
 
@@ -430,8 +430,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="82"
-                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:82</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="71"
+                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:71</a></div>
                         </td>
                     </tr>
 
@@ -467,8 +467,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="30"
-                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:30</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="26"
+                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:26</a></div>
                         </td>
                     </tr>
 
@@ -504,8 +504,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="59"
-                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:59</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="49"
+                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:49</a></div>
                         </td>
                     </tr>
 
@@ -541,8 +541,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="89"
-                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:89</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="77"
+                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:77</a></div>
                         </td>
                     </tr>
 
@@ -625,7 +625,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/login-form/login-form.component.ts:17</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/components/login-form/login-form.component.ts:16</a></div>
                         </td>
                     </tr>
 
@@ -656,7 +656,7 @@
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/components/login-form/login-form.component.ts:18</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/components/login-form/login-form.component.ts:17</a></div>
                         </td>
                     </tr>
 
@@ -669,97 +669,86 @@
 
 
     <div class="tab-pane fade  tab-source-code" id="source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ElementRef } from &#x27;@angular/core&#x27;; // Importa el decorador &#x60;Component&#x60;, ciclo de vida &#x60;OnInit&#x60; y manipulación directa del DOM con &#x60;ElementRef&#x60;.
-import { CommonModule } from &#x27;@angular/common&#x27;; // Módulo común de Angular para directivas como &#x60;ngIf&#x60; y &#x60;ngFor&#x60;.
-import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;; // Módulos para formularios reactivos.
-import { RouterModule, Router } from &#x27;@angular/router&#x27;; // Manejo de rutas.
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ElementRef } from &#x27;@angular/core&#x27;;
+import { CommonModule } from &#x27;@angular/common&#x27;;
+import { ReactiveFormsModule, FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { RouterModule, Router } from &#x27;@angular/router&#x27;;
 
-declare var bootstrap: any; // Declara Bootstrap como variable para manipulación directa.
+declare var bootstrap: any;
 
 @Component({
-  selector: &#x27;app-login-form&#x27;, // Selector que identifica este componente en las plantillas HTML.
-  standalone: true, // Define que este componente no necesita estar dentro de un módulo específico.
-  imports: [CommonModule, RouterModule, ReactiveFormsModule], // Módulos necesarios para este componente.
-  templateUrl: &#x27;./login-form.component.html&#x27;, // Archivo HTML asociado al componente.
-  styleUrls: [&#x27;./login-form.component.css&#x27;] // Archivo CSS asociado al componente.
+  selector: &#x27;app-login-form&#x27;,
+  standalone: true,
+  imports: [CommonModule, RouterModule, ReactiveFormsModule],
+  templateUrl: &#x27;./login-form.component.html&#x27;,
+  styleUrls: [&#x27;./login-form.component.css&#x27;]
 })
 export class LoginFormComponent implements OnInit {
-  loginForm!: FormGroup; // Formulario reactivo para manejar los campos de inicio de sesión.
-  usuarios: any[] &#x3D; []; // Lista de usuarios almacenados en localStorage.
+  loginForm!: FormGroup;
+  usuarios: any[] &#x3D; [];
 
-  // Constructor para inicializar dependencias
   constructor(private fb: FormBuilder, private router: Router, private el: ElementRef) {
-    // Carga los usuarios almacenados en localStorage si existen
     if (typeof localStorage !&#x3D;&#x3D; &#x27;undefined&#x27;) {
       const usuariosGuardados &#x3D; localStorage.getItem(&#x27;usuarios&#x27;);
       this.usuarios &#x3D; usuariosGuardados ? JSON.parse(usuariosGuardados) : [];
     }
   }
 
-  // Método del ciclo de vida &#x60;OnInit&#x60;
   ngOnInit() {
-    // Inicializa el formulario con dos campos: email/usuario y contraseña
     this.loginForm &#x3D; this.fb.group({
-      emailOrUsername: [&#x27;&#x27;, Validators.required], // Campo obligatorio para email o usuario
-      password: [&#x27;&#x27;, Validators.required] // Campo obligatorio para la contraseña
+      emailOrUsername: [&#x27;&#x27;, Validators.required],
+      password: [&#x27;&#x27;, Validators.required]
     });
   }
 
-  // Método para manejar el inicio de sesión
   iniciarSesion(emailOrUsername: string, password: string): boolean {
-    // Busca un usuario en localStorage que coincida con el email/usuario y la contraseña
     const usuario &#x3D; this.usuarios.find(user &#x3D;&gt;
       (user.email &#x3D;&#x3D;&#x3D; emailOrUsername || user.username &#x3D;&#x3D;&#x3D; emailOrUsername) &amp;&amp;
       user.password &#x3D;&#x3D;&#x3D; password
     );
 
     if (usuario) {
-      // Si el usuario existe, muestra un mensaje de éxito y redirige a &#x60;/home&#x60;
       this.showToast(&#x27;Inicio de sesión exitoso.&#x27;, &#x27;success&#x27;);
       this.router.navigate([&#x27;/home&#x27;]);
       return true;
     } else {
-      // Si no existe, muestra un mensaje de error
       this.showToast(&#x27;Email/Usuario o contraseña incorrectos.&#x27;, &#x27;danger&#x27;);
       return false;
     }
   }
 
-  // Método que se ejecuta al enviar el formulario
   onSubmit() {
-    if (this.loginForm.valid) { // Verifica si el formulario es válido
-      const emailOrUsernameControl &#x3D; this.loginForm.get(&#x27;emailOrUsername&#x27;); // Obtiene el valor del campo de email/usuario
-      const passwordControl &#x3D; this.loginForm.get(&#x27;password&#x27;); // Obtiene el valor del campo de contraseña
+    if (this.loginForm.valid) {
+      const emailOrUsernameControl &#x3D; this.loginForm.get(&#x27;emailOrUsername&#x27;);
+      const passwordControl &#x3D; this.loginForm.get(&#x27;password&#x27;);
 
       if (emailOrUsernameControl &amp;&amp; passwordControl) {
         const emailOrUsername &#x3D; emailOrUsernameControl.value;
         const password &#x3D; passwordControl.value;
 
-        const inicioExitoso &#x3D; this.iniciarSesion(emailOrUsername, password); // Intenta iniciar sesión
+        const inicioExitoso &#x3D; this.iniciarSesion(emailOrUsername, password);
         if (inicioExitoso) {
-          this.loginForm.reset(); // Resetea el formulario en caso de éxito
+          this.loginForm.reset();
         }
       } else {
-        console.error(&#x27;Form controls are missing&#x27;); // Muestra un error si los controles del formulario no están disponibles
+        console.error(&#x27;Form controls are missing&#x27;);
         this.showToast(&#x27;Formulario no válido.&#x27;, &#x27;danger&#x27;);
       }
     } else {
-      this.showToast(&#x27;Formulario no válido.&#x27;, &#x27;danger&#x27;); // Muestra un mensaje de error si el formulario es inválido
+      this.showToast(&#x27;Formulario no válido.&#x27;, &#x27;danger&#x27;);
     }
   }
 
-  // Método para redirigir al formulario de registro
   navigateToRegister() {
     this.router.navigateByUrl(&#x27;/register&#x27;).then(() &#x3D;&gt; {
-      window.location.reload(); // Recarga la página después de redirigir
+      window.location.reload();
     });
   }
 
-  // Método para mostrar un mensaje emergente (toast)
   showToast(message: string, type: &#x27;success&#x27; | &#x27;danger&#x27;) {
-    const toastContainer &#x3D; this.el.nativeElement.querySelector(&#x27;#toast-container&#x27;); // Selecciona el contenedor de los toasts
-    const toastElement &#x3D; document.createElement(&#x27;div&#x27;); // Crea un elemento div para el toast
-    toastElement.className &#x3D; &#x60;toast align-items-center text-bg-${type} border-0&#x60;; // Aplica clases según el tipo de mensaje
+    const toastContainer &#x3D; this.el.nativeElement.querySelector(&#x27;#toast-container&#x27;);
+    const toastElement &#x3D; document.createElement(&#x27;div&#x27;);
+    toastElement.className &#x3D; &#x60;toast align-items-center text-bg-${type} border-0&#x60;;
     toastElement.role &#x3D; &#x27;alert&#x27;;
     toastElement.ariaLive &#x3D; &#x27;assertive&#x27;;
     toastElement.ariaAtomic &#x3D; &#x27;true&#x27;;
@@ -771,14 +760,14 @@ export class LoginFormComponent implements OnInit {
         &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn-close btn-close-white me-2 m-auto&quot; data-bs-dismiss&#x3D;&quot;toast&quot; aria-label&#x3D;&quot;Close&quot;&gt;&lt;/button&gt;
       &lt;/div&gt;
     &#x60;;
-    toastContainer.appendChild(toastElement); // Añade el toast al contenedor
+    toastContainer.appendChild(toastElement);
 
-    const toastBootstrap &#x3D; new bootstrap.Toast(toastElement); // Inicializa el toast usando Bootstrap
-    toastBootstrap.show(); // Muestra el toast
+    const toastBootstrap &#x3D; new bootstrap.Toast(toastElement);
+    toastBootstrap.show();
 
     setTimeout(() &#x3D;&gt; {
-      toastBootstrap.hide(); // Oculta el toast después de 3 segundos
-      toastElement.remove(); // Elimina el elemento del DOM
+      toastBootstrap.hide();
+      toastElement.remove();
     }, 3000);
   }
 }
@@ -787,66 +776,44 @@ export class LoginFormComponent implements OnInit {
 
     <div class="tab-pane fade " id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;mb-5 text-center&quot;&gt;
-    &lt;!-- Logotipo de Automotora --&gt;
-    &lt;img src&#x3D;&quot;logo.png&quot; alt&#x3D;&quot;Automotora Logo&quot; class&#x3D;&quot;logo&quot;&gt;
+  &lt;img src&#x3D;&quot;logo.png&quot; alt&#x3D;&quot;Automotora Logo&quot; class&#x3D;&quot;logo&quot;&gt;
+&lt;/div&gt;
+
+&lt;div aria-live&#x3D;&quot;polite&quot; aria-atomic&#x3D;&quot;true&quot; class&#x3D;&quot;position-relative&quot;&gt;
+  &lt;div class&#x3D;&quot;toast-container position-fixed top-0 end-0 p-3&quot; id&#x3D;&quot;toast-container&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;form [formGroup]&#x3D;&quot;loginForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; class&#x3D;&quot;col-4 text-center w-100 needs-validation&quot; novalidate&gt;
+  &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
+    &lt;input type&#x3D;&quot;text&quot; formControlName&#x3D;&quot;emailOrUsername&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;email&quot;
+      placeholder&#x3D;&quot;Introduce tu correo electrónico o usuario&quot; required&gt;
+    &lt;label for&#x3D;&quot;email&quot;&gt;Correo electrónico o usuario&lt;/label&gt;
+    &lt;div class&#x3D;&quot;invalid-feedback&quot;&gt;Por favor, introduce tu correo electrónico o usuario.&lt;/div&gt;
   &lt;/div&gt;
-  
-  &lt;div aria-live&#x3D;&quot;polite&quot; aria-atomic&#x3D;&quot;true&quot; class&#x3D;&quot;position-relative&quot;&gt;
-    &lt;!-- Contenedor para los mensajes emergentes (toasts) --&gt;
-    &lt;div class&#x3D;&quot;toast-container position-fixed top-0 end-0 p-3&quot; id&#x3D;&quot;toast-container&quot;&gt;&lt;/div&gt;
+
+  &lt;div class&#x3D;&quot;form-group form-floating mb-3 position-relative&quot;&gt;
+    &lt;input type&#x3D;&quot;password&quot; formControlName&#x3D;&quot;password&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;pwd&quot;
+      placeholder&#x3D;&quot;Introduce tu contraseña&quot; required&gt;
+    &lt;label for&#x3D;&quot;pwd&quot;&gt;Contraseña&lt;/label&gt;
+    &lt;div class&#x3D;&quot;invalid-feedback&quot;&gt;Por favor, introduce tu contraseña.&lt;/div&gt;
+    &lt;button type&#x3D;&quot;button&quot; id&#x3D;&quot;togglePassword&quot;
+      class&#x3D;&quot;btn btn-outline-dark position-absolute top-50 end-0 translate-middle-y&quot;&gt;
+      Mostrar
+    &lt;/button&gt;
   &lt;/div&gt;
-  
-  &lt;form [formGroup]&#x3D;&quot;loginForm&quot; (ngSubmit)&#x3D;&quot;onSubmit()&quot; class&#x3D;&quot;col-4 text-center w-100 needs-validation&quot; novalidate&gt;
-    &lt;!-- Campo para correo o nombre de usuario --&gt;
-    &lt;div class&#x3D;&quot;form-group form-floating mb-3&quot;&gt;
-      &lt;input 
-        type&#x3D;&quot;text&quot; 
-        formControlName&#x3D;&quot;emailOrUsername&quot; 
-        class&#x3D;&quot;form-control&quot; 
-        id&#x3D;&quot;email&quot; 
-        placeholder&#x3D;&quot;Introduce tu correo electrónico o usuario&quot; 
-        required&gt;
-      &lt;label for&#x3D;&quot;email&quot;&gt;Correo electrónico o usuario&lt;/label&gt;
-      &lt;div class&#x3D;&quot;invalid-feedback&quot;&gt;Por favor, introduce tu correo electrónico o usuario.&lt;/div&gt;
-    &lt;/div&gt;
-  
-    &lt;!-- Campo para contraseña --&gt;
-    &lt;div class&#x3D;&quot;form-group form-floating mb-3 position-relative&quot;&gt;
-      &lt;input 
-        type&#x3D;&quot;password&quot; 
-        formControlName&#x3D;&quot;password&quot; 
-        class&#x3D;&quot;form-control&quot; 
-        id&#x3D;&quot;pwd&quot; 
-        placeholder&#x3D;&quot;Introduce tu contraseña&quot; 
-        required&gt;
-      &lt;label for&#x3D;&quot;pwd&quot;&gt;Contraseña&lt;/label&gt;
-      &lt;div class&#x3D;&quot;invalid-feedback&quot;&gt;Por favor, introduce tu contraseña.&lt;/div&gt;
-      &lt;!-- Botón para mostrar u ocultar la contraseña --&gt;
-      &lt;button 
-        type&#x3D;&quot;button&quot; 
-        id&#x3D;&quot;togglePassword&quot; 
-        class&#x3D;&quot;btn btn-outline-dark position-absolute top-50 end-0 translate-middle-y&quot;&gt;
-        Mostrar
-      &lt;/button&gt;
-    &lt;/div&gt;
-  
-    &lt;!-- Botón de envío del formulario --&gt;
-    &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-submit btn-primary&quot;&gt;Iniciar sesión&lt;/button&gt;
-  &lt;/form&gt;
-  
-  &lt;div class&#x3D;&quot;separator my-4&quot;&gt;
-    &lt;!-- Separador visual entre el formulario y el botón de inicio con Facebook --&gt;
-    &lt;span class&#x3D;&quot;separator-text&quot;&gt;O&lt;/span&gt;
-  &lt;/div&gt;
-  
-  &lt;!-- Botón para iniciar sesión con Facebook --&gt;
-  &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-submit btn-secondary&quot;&gt;Iniciar sesión con Facebook&lt;/button&gt;
-  
-  &lt;p class&#x3D;&quot;mt-4&quot;&gt;
-    &lt;!-- Enlace para redirigir al registro --&gt;
-    ¿No tienes una cuenta? &lt;a (click)&#x3D;&quot;navigateToRegister()&quot; class&#x3D;&quot;link-dark&quot;&gt;Regístrate&lt;/a&gt;
-  &lt;/p&gt;
-  </code></pre>
+
+  &lt;button type&#x3D;&quot;submit&quot; class&#x3D;&quot;btn btn-submit btn-primary&quot;&gt;Iniciar sesión&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;div class&#x3D;&quot;separator my-4&quot;&gt;
+  &lt;span class&#x3D;&quot;separator-text&quot;&gt;O&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;btn btn-submit btn-secondary&quot;&gt;Iniciar sesión con Facebook&lt;/button&gt;
+
+&lt;p class&#x3D;&quot;mt-4&quot;&gt;
+  ¿No tienes una cuenta? &lt;a (click)&#x3D;&quot;navigateToRegister()&quot; class&#x3D;&quot;link-dark&quot;&gt;Regístrate&lt;/a&gt;
+&lt;/p&gt;</code></pre>
     </div>
 
     <div class="tab-pane fade " id="styleData">
@@ -854,54 +821,54 @@ export class LoginFormComponent implements OnInit {
                     <code>./login-form.component.css</code>
                 </p>
                 <pre class="line-numbers"><code class="language-scss">.logo {
-    width: 150px;
-  }
-  
-  #togglePassword, #toggleRepeatPassword {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 1em;
-    --bs-btn-hover-color: #212529;
-  }
-  
-  .btn-submit {
-    width: 100%;
-  }
-  
-  .separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #aaa;
-  }
-  
-  .separator::before,
-  .separator::after {
-    content: &#x27;&#x27;;
-    flex: 1;
-    border-bottom: 1px solid #aaa;
-  }
-  
-  .separator:not(:empty)::before {
-    margin-right: .25em;
-  }
-  
-  .separator:not(:empty)::after {
-    margin-left: .25em;
-  }
-  
-  .separator-text {
-    font-size: 1em;
-    color: #555;
-    padding: 0 10px;
-    background-color: #fff;
-  }
-  
-  a.link-dark {
-    cursor: pointer;
-  }
-    </code></pre>
+  width: 150px;
+}
+
+#togglePassword,
+#toggleRepeatPassword {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+  --bs-btn-hover-color: #212529;
+}
+
+.btn-submit {
+  width: 100%;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #aaa;
+}
+
+.separator::before,
+.separator::after {
+  content: &#x27;&#x27;;
+  flex: 1;
+  border-bottom: 1px solid #aaa;
+}
+
+.separator:not(:empty)::before {
+  margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: .25em;
+}
+
+.separator-text {
+  font-size: 1em;
+  color: #555;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+a.link-dark {
+  cursor: pointer;
+}</code></pre>
     </div>
 
     <div class="tab-pane fade " id="tree">
@@ -929,7 +896,7 @@ export class LoginFormComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="mb-5 text-center">    <!-- Logotipo de Automotora -->    <img src="logo.png" alt="Automotora Logo" class="logo">  </div>    <div aria-live="polite" aria-atomic="true" class="position-relative">    <!-- Contenedor para los mensajes emergentes (toasts) -->    <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-container"></div>  </div>    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="col-4 text-center w-100 needs-validation" novalidate>    <!-- Campo para correo o nombre de usuario -->    <div class="form-group form-floating mb-3">      <input         type="text"         formControlName="emailOrUsername"         class="form-control"         id="email"         placeholder="Introduce tu correo electrónico o usuario"         required>      <label for="email">Correo electrónico o usuario</label>      <div class="invalid-feedback">Por favor, introduce tu correo electrónico o usuario.</div>    </div>      <!-- Campo para contraseña -->    <div class="form-group form-floating mb-3 position-relative">      <input         type="password"         formControlName="password"         class="form-control"         id="pwd"         placeholder="Introduce tu contraseña"         required>      <label for="pwd">Contraseña</label>      <div class="invalid-feedback">Por favor, introduce tu contraseña.</div>      <!-- Botón para mostrar u ocultar la contraseña -->      <button         type="button"         id="togglePassword"         class="btn btn-outline-dark position-absolute top-50 end-0 translate-middle-y">        Mostrar      </button>    </div>      <!-- Botón de envío del formulario -->    <button type="submit" class="btn btn-submit btn-primary">Iniciar sesión</button>  </form>    <div class="separator my-4">    <!-- Separador visual entre el formulario y el botón de inicio con Facebook -->    <span class="separator-text">O</span>  </div>    <!-- Botón para iniciar sesión con Facebook -->  <button type="button" class="btn btn-submit btn-secondary">Iniciar sesión con Facebook</button>    <p class="mt-4">    <!-- Enlace para redirigir al registro -->    ¿No tienes una cuenta? <a (click)="navigateToRegister()" class="link-dark">Regístrate</a>  </p>  </div>'
+        var COMPONENT_TEMPLATE = '<div><div class="mb-5 text-center">  <img src="logo.png" alt="Automotora Logo" class="logo"></div><div aria-live="polite" aria-atomic="true" class="position-relative">  <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-container"></div></div><form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="col-4 text-center w-100 needs-validation" novalidate>  <div class="form-group form-floating mb-3">    <input type="text" formControlName="emailOrUsername" class="form-control" id="email"      placeholder="Introduce tu correo electrónico o usuario" required>    <label for="email">Correo electrónico o usuario</label>    <div class="invalid-feedback">Por favor, introduce tu correo electrónico o usuario.</div>  </div>  <div class="form-group form-floating mb-3 position-relative">    <input type="password" formControlName="password" class="form-control" id="pwd"      placeholder="Introduce tu contraseña" required>    <label for="pwd">Contraseña</label>    <div class="invalid-feedback">Por favor, introduce tu contraseña.</div>    <button type="button" id="togglePassword"      class="btn btn-outline-dark position-absolute top-50 end-0 translate-middle-y">      Mostrar    </button>  </div>  <button type="submit" class="btn btn-submit btn-primary">Iniciar sesión</button></form><div class="separator my-4">  <span class="separator-text">O</span></div><button type="button" class="btn btn-submit btn-secondary">Iniciar sesión con Facebook</button><p class="mt-4">  ¿No tienes una cuenta? <a (click)="navigateToRegister()" class="link-dark">Regístrate</a></p></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AutomovilesComponent', 'selector': 'app-automoviles'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'PruebasUntariasComponent', 'selector': 'app-pruebas-unitarias'},{'name': 'RegisterComponent', 'selector': 'app-register'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LoginFormComponent'};
