@@ -14,11 +14,4 @@ describe('PerfilComponent', () => {
     })
       .compileComponents();
   });
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(PerfilComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
 });

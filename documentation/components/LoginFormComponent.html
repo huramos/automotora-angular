@@ -235,6 +235,9 @@
                                 <a href="#onSubmit" >onSubmit</a>
                             </li>
                             <li>
+                                <a href="#recoverPassword" >recoverPassword</a>
+                            </li>
+                            <li>
                                 <a href="#showToast" >showToast</a>
                             </li>
                         </ul>
@@ -525,6 +528,43 @@
         <tbody>
             <tr>
                 <td class="col-md-4">
+                    <a name="recoverPassword"></a>
+                    <span class="name">
+                        <span ><b>recoverPassword</b></span>
+                        <a href="#recoverPassword"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>recoverPassword()</code>
+                </td>
+            </tr>
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-line">Defined in <a href="" data-line="77"
+                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:77</a></div>
+                        </td>
+                    </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                        <div class="io-description">
+                            <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                        </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
                     <a name="showToast"></a>
                     <span class="name">
                         <span ><b>showToast</b></span>
@@ -541,8 +581,8 @@
 
                     <tr>
                         <td class="col-md-4">
-                            <div class="io-line">Defined in <a href="" data-line="77"
-                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:77</a></div>
+                            <div class="io-line">Defined in <a href="" data-line="83"
+                                    class="link-to-prism">src/app/components/login-form/login-form.component.ts:83</a></div>
                         </td>
                     </tr>
 
@@ -745,6 +785,12 @@ export class LoginFormComponent implements OnInit {
     });
   }
 
+  recoverPassword() {
+    this.router.navigateByUrl(&#x27;/register&#x27;).then(() &#x3D;&gt; {
+      window.location.reload();
+    });
+  }
+
   showToast(message: string, type: &#x27;success&#x27; | &#x27;danger&#x27;) {
     const toastContainer &#x3D; this.el.nativeElement.querySelector(&#x27;#toast-container&#x27;);
     const toastElement &#x3D; document.createElement(&#x27;div&#x27;);
@@ -775,7 +821,7 @@ export class LoginFormComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade " id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;mb-5 text-center&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;mb-5 text-center&quot; href&#x3D;&quot;login&quot;&gt;
   &lt;img src&#x3D;&quot;logo.png&quot; alt&#x3D;&quot;Automotora Logo&quot; class&#x3D;&quot;logo&quot;&gt;
 &lt;/div&gt;
 
@@ -813,7 +859,10 @@ export class LoginFormComponent implements OnInit {
 
 &lt;p class&#x3D;&quot;mt-4&quot;&gt;
   ¿No tienes una cuenta? &lt;a (click)&#x3D;&quot;navigateToRegister()&quot; class&#x3D;&quot;link-dark&quot;&gt;Regístrate&lt;/a&gt;
-&lt;/p&gt;</code></pre>
+  ¿Olvidaste tu contraseña? &lt;a (click)&#x3D;&quot;recoverPassword()&quot; class&#x3D;&quot;link-dark&quot;&gt;Recuperar contraseña&lt;/a&gt;
+&lt;/p&gt;
+
+</code></pre>
     </div>
 
     <div class="tab-pane fade " id="styleData">
@@ -896,7 +945,7 @@ a.link-dark {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div class="mb-5 text-center">  <img src="logo.png" alt="Automotora Logo" class="logo"></div><div aria-live="polite" aria-atomic="true" class="position-relative">  <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-container"></div></div><form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="col-4 text-center w-100 needs-validation" novalidate>  <div class="form-group form-floating mb-3">    <input type="text" formControlName="emailOrUsername" class="form-control" id="email"      placeholder="Introduce tu correo electrónico o usuario" required>    <label for="email">Correo electrónico o usuario</label>    <div class="invalid-feedback">Por favor, introduce tu correo electrónico o usuario.</div>  </div>  <div class="form-group form-floating mb-3 position-relative">    <input type="password" formControlName="password" class="form-control" id="pwd"      placeholder="Introduce tu contraseña" required>    <label for="pwd">Contraseña</label>    <div class="invalid-feedback">Por favor, introduce tu contraseña.</div>    <button type="button" id="togglePassword"      class="btn btn-outline-dark position-absolute top-50 end-0 translate-middle-y">      Mostrar    </button>  </div>  <button type="submit" class="btn btn-submit btn-primary">Iniciar sesión</button></form><div class="separator my-4">  <span class="separator-text">O</span></div><button type="button" class="btn btn-submit btn-secondary">Iniciar sesión con Facebook</button><p class="mt-4">  ¿No tienes una cuenta? <a (click)="navigateToRegister()" class="link-dark">Regístrate</a></p></div>'
+        var COMPONENT_TEMPLATE = '<div><div class="mb-5 text-center" href="login">  <img src="logo.png" alt="Automotora Logo" class="logo"></div><div aria-live="polite" aria-atomic="true" class="position-relative">  <div class="toast-container position-fixed top-0 end-0 p-3" id="toast-container"></div></div><form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="col-4 text-center w-100 needs-validation" novalidate>  <div class="form-group form-floating mb-3">    <input type="text" formControlName="emailOrUsername" class="form-control" id="email"      placeholder="Introduce tu correo electrónico o usuario" required>    <label for="email">Correo electrónico o usuario</label>    <div class="invalid-feedback">Por favor, introduce tu correo electrónico o usuario.</div>  </div>  <div class="form-group form-floating mb-3 position-relative">    <input type="password" formControlName="password" class="form-control" id="pwd"      placeholder="Introduce tu contraseña" required>    <label for="pwd">Contraseña</label>    <div class="invalid-feedback">Por favor, introduce tu contraseña.</div>    <button type="button" id="togglePassword"      class="btn btn-outline-dark position-absolute top-50 end-0 translate-middle-y">      Mostrar    </button>  </div>  <button type="submit" class="btn btn-submit btn-primary">Iniciar sesión</button></form><div class="separator my-4">  <span class="separator-text">O</span></div><button type="button" class="btn btn-submit btn-secondary">Iniciar sesión con Facebook</button><p class="mt-4">  ¿No tienes una cuenta? <a (click)="navigateToRegister()" class="link-dark">Regístrate</a>  ¿Olvidaste tu contraseña? <a (click)="recoverPassword()" class="link-dark">Recuperar contraseña</a></p></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AutomovilesComponent', 'selector': 'app-automoviles'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'PruebasUntariasComponent', 'selector': 'app-pruebas-unitarias'},{'name': 'RegisterComponent', 'selector': 'app-register'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'LoginFormComponent'};

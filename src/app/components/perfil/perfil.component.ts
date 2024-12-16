@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class PerfilComponent {
   usuario = {
     nombre: 'Hugo Ramos',
-    email: 'hu.ramos2@duocuc.cl',
+    email: 'hr@gmail.com',
     edad: 30,
     contrasena: 'xxxx',
     imagen: 'logo.png'

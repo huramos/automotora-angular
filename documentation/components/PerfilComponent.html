@@ -234,7 +234,7 @@
                     <td class="col-md-4">
                         <i>Default value : </i><code>{
     nombre: &#x27;Hugo Ramos&#x27;,
-    email: &#x27;hu.ramos2@duocuc.cl&#x27;,
+    email: &#x27;hr@gmail.com&#x27;,
     edad: 30,
     contrasena: &#x27;xxxx&#x27;,
     imagen: &#x27;logo.png&#x27;
@@ -266,7 +266,7 @@
 export class PerfilComponent {
   usuario &#x3D; {
     nombre: &#x27;Hugo Ramos&#x27;,
-    email: &#x27;hu.ramos2@duocuc.cl&#x27;,
+    email: &#x27;hr@gmail.com&#x27;,
     edad: 30,
     contrasena: &#x27;xxxx&#x27;,
     imagen: &#x27;logo.png&#x27;
@@ -277,7 +277,7 @@ export class PerfilComponent {
 
     <div class="tab-pane fade " id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;nav class&#x3D;&quot;navbar navbar-expand-lg navbar-light bg-white&quot;&gt;
-  &lt;a class&#x3D;&quot;navbar-brand&quot; href&#x3D;&quot;#&quot;&gt;
+  &lt;a class&#x3D;&quot;navbar-brand&quot; href&#x3D;&quot;login&quot;&gt;
     &lt;img src&#x3D;&quot;logo.png&quot; alt&#x3D;&quot;Logo&quot; class&#x3D;&quot;navbar-logo&quot;&gt;
     HRH Automóviles
   &lt;/a&gt;
@@ -294,7 +294,7 @@ export class PerfilComponent {
         &lt;a class&#x3D;&quot;nav-link text-primary&quot; href&#x3D;&quot;automoviles&quot;&gt;Automoviles&lt;/a&gt;
       &lt;/li&gt;
       &lt;li class&#x3D;&quot;nav-item&quot;&gt;
-        &lt;a class&#x3D;&quot;nav-link text-primary&quot; href&#x3D;&quot;#&quot;&gt;Salir&lt;/a&gt;
+        &lt;a class&#x3D;&quot;nav-link text-primary&quot; href&#x3D;&quot;login&quot;&gt;Salir&lt;/a&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/div&gt;
@@ -366,7 +366,7 @@ p {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-expand-lg navbar-light bg-white">  <a class="navbar-brand" href="#">    <img src="logo.png" alt="Logo" class="navbar-logo">    HRH Automóviles  </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"    aria-expanded="false" aria-label="Toggle navigation">    <span class="navbar-toggler-icon"></span>  </button>  <div class="collapse navbar-collapse" id="navbarNav">    <ul class="navbar-nav ml-auto">      <li class="nav-item">        <a class="nav-link text-primary" href="perfil">Perfil</a>      </li>      <li class="nav-item">        <a class="nav-link text-primary" href="automoviles">Automoviles</a>      </li>      <li class="nav-item">        <a class="nav-link text-primary" href="#">Salir</a>      </li>    </ul>  </div></nav><div class="container mt-4">  <div class="row">    <div class="col-md-4">      <img src="{{usuario.imagen}}" alt="Imagen de perfil" class="img-fluid mb-3">    </div>    <div class="col-md-8">      <h2>Perfil de Usuario</h2>      <p><strong>Nombre:</strong> {{usuario.nombre}}</p>      <p><strong>Edad:</strong> {{usuario.edad}}</p>      <p><strong>Email:</strong> {{usuario.email}}</p>      <p><strong>Contrasena:</strong> {{usuario.contrasena}}</p>    </div>  </div></div></div>'
+        var COMPONENT_TEMPLATE = '<div><nav class="navbar navbar-expand-lg navbar-light bg-white">  <a class="navbar-brand" href="login">    <img src="logo.png" alt="Logo" class="navbar-logo">    HRH Automóviles  </a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"    aria-expanded="false" aria-label="Toggle navigation">    <span class="navbar-toggler-icon"></span>  </button>  <div class="collapse navbar-collapse" id="navbarNav">    <ul class="navbar-nav ml-auto">      <li class="nav-item">        <a class="nav-link text-primary" href="perfil">Perfil</a>      </li>      <li class="nav-item">        <a class="nav-link text-primary" href="automoviles">Automoviles</a>      </li>      <li class="nav-item">        <a class="nav-link text-primary" href="login">Salir</a>      </li>    </ul>  </div></nav><div class="container mt-4">  <div class="row">    <div class="col-md-4">      <img src="{{usuario.imagen}}" alt="Imagen de perfil" class="img-fluid mb-3">    </div>    <div class="col-md-8">      <h2>Perfil de Usuario</h2>      <p><strong>Nombre:</strong> {{usuario.nombre}}</p>      <p><strong>Edad:</strong> {{usuario.edad}}</p>      <p><strong>Email:</strong> {{usuario.email}}</p>      <p><strong>Contrasena:</strong> {{usuario.contrasena}}</p>    </div>  </div></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AutomovilesComponent', 'selector': 'app-automoviles'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginFormComponent', 'selector': 'app-login-form'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'PerfilComponent', 'selector': 'app-perfil'},{'name': 'PruebasUntariasComponent', 'selector': 'app-pruebas-unitarias'},{'name': 'RegisterComponent', 'selector': 'app-register'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'PerfilComponent'};
